@@ -15,9 +15,13 @@ python3 -m http.server 8000
 
 ## Add your profile photo
 
-The About section looks for `assets/img/profile.jpg`. Drop your photo in at that exact
-path (a square image, at least 300×300px, works best) and it will appear automatically.
-Until then, a monogram placeholder is shown.
+The About section automatically picks up your photo from `assets/img/profile.jpg`
+(`.jpeg`, `.png` and `.webp` also work). Until the file exists, a monogram
+placeholder is shown.
+
+Easiest way: on GitHub, open the `assets/img` folder of this branch →
+**Add file → Upload files** → upload your photo named `profile.jpg`.
+A square image of at least 300×300px works best.
 
 ## Customise
 

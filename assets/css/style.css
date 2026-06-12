@@ -137,10 +137,10 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* stock photo on top; gradient only shows while it loads / if it fails */
   background:
-    linear-gradient(135deg, #3c3128, #6b5340),
-    url("https://picsum.photos/id/1011/1920/1200") center/cover no-repeat;
-  background-blend-mode: normal;
+    url("https://picsum.photos/id/1015/1920/1280") center/cover no-repeat,
+    linear-gradient(135deg, #3c3128, #6b5340);
 }
 .hero-overlay {
   position: absolute;

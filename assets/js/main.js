@@ -40,6 +40,24 @@
   }
   setTimeout(tick, 600);
 
+  /* ---------- Profile photo: use assets/img/profile.* if present ---------- */
+  (function () {
+    const img = document.getElementById("profileImg");
+    const candidates = ["jpg", "jpeg", "png", "webp"].map(function (ext) {
+      return "assets/img/profile." + ext;
+    });
+    let i = 0;
+    function tryNext() {
+      if (i >= candidates.length) return; // keep the placeholder
+      const probe = new Image();
+      const src = candidates[i++];
+      probe.onload = function () { img.src = src; };
+      probe.onerror = tryNext;
+      probe.src = src;
+    }
+    tryNext();
+  })();
+
   /* ---------- Sticky header ---------- */
   const header = document.getElementById("header");
   function onScroll() {
