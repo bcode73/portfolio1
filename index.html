@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samsec Studio — Fullstack Website Developer &amp; Python Developer</title>
+  <meta name="description" content="Samsec Studio — fullstack website developer and Python developer based in Lagos, Nigeria. I build fast, modern websites, web apps and Python solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body>
+
+  <!-- ======= Header / Nav ======= -->
+  <header id="header">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">Samsec Studio</a>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======= Hero ======= -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>SAMSEC STUDIO</h1>
+      <p class="typed-wrap"><span id="typed"></span><span class="cursor">|</span></p>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 110" preserveAspectRatio="none">
+        <path d="M0,70 C180,110 320,20 520,40 C720,60 840,105 1040,85 C1220,67 1340,30 1440,55 L1440,110 L0,110 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ======= About ======= -->
+  <section id="about" class="section section-white">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="section-intro reveal">
+        I'm <strong>Samsec Studio</strong>, a fullstack website developer and Python developer based in
+        Lagos, Nigeria. I design and build fast, modern websites and web applications — from
+        pixel-perfect frontends to solid Python backends — turning ideas into products that work.
+      </p>
+
+      <div class="about-card reveal">
+        <div class="about-profile">
+          <div class="profile-pic">
+            <img src="assets/img/profile.jpg"
+                 onerror="this.onerror=null;this.src='assets/img/profile-placeholder.svg';"
+                 alt="Samsec Studio">
+          </div>
+          <ul class="profile-info">
+            <li><strong>Name :</strong> Samsec Studio</li>
+            <li><strong>E-Mail :</strong> <a href="mailto:studio@samsec.com.ng">studio@samsec.com.ng</a></li>
+            <li><strong>Location :</strong> Lagos, Nigeria</li>
+          </ul>
+        </div>
+        <div class="about-skills">
+          <h3>Skills</h3>
+          <div class="skill">
+            <div class="skill-head"><span>HTML5 &amp; CSS3</span><span>95%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>Python</span><span>92%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-head"><span>React &amp; Node.js</span><span>88%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="background:#ffffff">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,55 C200,95 380,15 600,35 C820,55 950,98 1160,75 C1310,59 1390,35 1440,45 L1440,100 L0,100 Z" fill="#f4f4f4"/>
+    </svg>
+  </div>
+
+  <!-- ======= Portfolio ======= -->
+  <section id="portfolio" class="section section-grey">
+    <div class="container">
+      <h2 class="section-title left reveal">Portfolio</h2>
+      <ul class="portfolio-filters reveal" id="portfolioFilters">
+        <li data-filter="all" class="active">All</li>
+        <li data-filter="web-design">Web Design</li>
+        <li data-filter="web-apps">Web Apps</li>
+        <li data-filter="python">Python</li>
+      </ul>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <article class="portfolio-item reveal" data-category="web-design">
+          <img src="https://picsum.photos/id/180/800/640" alt="Business Landing Page" loading="lazy">
+          <div class="portfolio-hover">
+            <h4>Business Landing Page</h4>
+            <span>Web Design</span>
+          </div>
+        </article>
+        <article class="portfolio-item reveal" data-category="web-apps">
+          <img src="https://picsum.photos/id/0/800/640" alt="E-Commerce Storefront" loading="lazy">
+          <div class="portfolio-hover">
+            <h4>E-Commerce Storefront</h4>
+            <span>Web Apps</span>
+          </div>
+        </article>
+        <article class="portfolio-item reveal" data-category="python">
+          <img src="https://picsum.photos/id/2/800/640" alt="Python Automation Suite" loading="lazy">
+          <div class="portfolio-hover">
+            <h4>Python Automation Suite</h4>
+            <span>Python</span>
+          </div>
+        </article>
+        <article class="portfolio-item reveal" data-category="web-design">
+          <img src="https://picsum.photos/id/9/800/640" alt="Personal Brand Website" loading="lazy">
+          <div class="portfolio-hover">
+            <h4>Personal Brand Website</h4>
+            <span>Web Design</span>
+          </div>
+        </article>
+        <article class="portfolio-item reveal" data-category="python">
+          <img src="https://picsum.photos/id/1/800/640" alt="REST API and Dashboard" loading="lazy">
+          <div class="portfolio-hover">
+            <h4>REST API &amp; Dashboard</h4>
+            <span>Python</span>
+          </div>
+        </article>
+        <article class="portfolio-item reveal" data-category="web-apps">
+          <img src="https://picsum.photos/id/8/800/640" alt="Restaurant Ordering App" loading="lazy">
+          <div class="portfolio-hover">
+            <h4>Restaurant Ordering App</h4>
+            <span>Web Apps</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="background:#f4f4f4">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,45 C150,15 360,90 580,70 C800,50 920,10 1140,40 C1290,60 1390,80 1440,60 L1440,100 L0,100 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ======= Services / What I Do ======= -->
+  <section id="services" class="section section-white">
+    <div class="container">
+      <h2 class="section-title reveal">What I Do</h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/><line x1="13.5" y1="5" x2="10.5" y2="19"/></svg>
+          </div>
+          <h4>Web Design</h4>
+          <p>Clean, modern interfaces designed around your brand — layouts crafted to look sharp and turn visitors into customers.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h4>Fullstack Development</h4>
+          <p>Complete web applications built end to end — from the database and APIs to the browser — with modern JavaScript and Python stacks.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <h4>Python Development</h4>
+          <p>Scripts, bots, APIs and data tools. If it can be automated, it can be built in Python — fast, tested and reliable.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18.5" x2="13" y2="18.5"/></svg>
+          </div>
+          <h4>Responsive Design</h4>
+          <p>Every site ships looking and working beautifully on phones, tablets and desktops. Mobile-first, always.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+          </div>
+          <h4>SEO Friendly</h4>
+          <p>Semantic markup, fast load times and clean structure, so search engines — and your customers — can always find you.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><line x1="5.7" y1="5.7" x2="9.5" y2="9.5"/><line x1="14.5" y1="14.5" x2="18.3" y2="18.3"/><line x1="18.3" y1="5.7" x2="14.5" y2="9.5"/><line x1="9.5" y1="14.5" x2="5.7" y2="18.3"/></svg>
+          </div>
+          <h4>Support &amp; Maintenance</h4>
+          <p>No disappearing after launch — updates, fixes and improvements whenever you need them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="background:#ffffff">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,60 C220,100 400,20 620,40 C840,60 980,100 1180,75 C1320,58 1400,38 1440,50 L1440,100 L0,100 Z" fill="#f4f4f4"/>
+    </svg>
+  </div>
+
+  <!-- ======= Blog / Latest News ======= -->
+  <section id="blog" class="section section-grey">
+    <div class="container">
+      <h2 class="section-title reveal">Latest News</h2>
+      <div class="blog-grid">
+        <article class="blog-card reveal">
+          <a href="#" class="blog-thumb"><img src="https://picsum.photos/id/60/800/500" alt="Blog post" loading="lazy"></a>
+          <div class="blog-body">
+            <h4><a href="#">Shipping Faster With Django &amp; React</a></h4>
+            <p>How pairing a Python backend with a modern React frontend lets me take projects from idea to live product in record time.</p>
+            <div class="blog-meta"><strong>Samsec Studio</strong><span>12 March 2026</span></div>
+          </div>
+        </article>
+        <article class="blog-card reveal">
+          <a href="#" class="blog-thumb"><img src="https://picsum.photos/id/20/800/500" alt="Blog post" loading="lazy"></a>
+          <div class="blog-body">
+            <h4><a href="#">Practical Python Automation For Business</a></h4>
+            <p>Reports, invoices, data entry, web scraping — the everyday tasks I automate for clients with a few hundred lines of Python.</p>
+            <div class="blog-meta"><strong>Samsec Studio</strong><span>28 April 2026</span></div>
+          </div>
+        </article>
+        <article class="blog-card reveal">
+          <a href="#" class="blog-thumb"><img src="https://picsum.photos/id/48/800/500" alt="Blog post" loading="lazy"></a>
+          <div class="blog-body">
+            <h4><a href="#">Building Fast, SEO-Friendly Websites</a></h4>
+            <p>My checklist for performance and search visibility — the small technical decisions that make a website rank and convert.</p>
+            <div class="blog-meta"><strong>Samsec Studio</strong><span>30 May 2026</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="center reveal">
+        <a href="#blog" class="btn">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="background:#f4f4f4">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,50 C180,85 400,15 620,38 C840,61 1000,95 1200,70 C1330,54 1400,40 1440,52 L1440,100 L0,100 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <!-- ======= Contact ======= -->
+  <section id="contact" class="section section-white">
+    <div class="container contact-wrap">
+      <div class="contact-info reveal">
+        <h2 class="section-title left small">Get In Touch</h2>
+        <div class="info-block">
+          <h5>Address</h5>
+          <p>Lagos, Nigeria</p>
+        </div>
+        <div class="info-block">
+          <h5>Email</h5>
+          <p><a href="mailto:studio@samsec.com.ng">studio@samsec.com.ng</a></p>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h2 class="section-title right small">Send Us A Message</h2>
+        <form id="contactForm">
+          <div class="form-row">
+            <input type="text" id="cfName" placeholder="Name" required>
+            <input type="email" id="cfEmail" placeholder="Email" required>
+          </div>
+          <textarea id="cfMessage" rows="3" placeholder="Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <div class="divider" style="background:#ffffff">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,55 C200,90 420,20 640,42 C860,64 1020,98 1220,72 C1340,57 1410,42 1440,52 L1440,100 L0,100 Z" fill="#111111"/>
+    </svg>
+  </div>
+  <footer>
+    <div class="socials">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l-.4 3H14v9h-3.2v-9H8.5V9h2.3V7.1c0-2.4 1-3.8 3.8-3.8H17v3h-1.6c-1.2 0-1.4.5-1.4 1.4V9z"/></svg></a>
+      <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.7 3H21l-7.1 8.1L22 21h-6.6l-5.1-6.3L4.4 21H1l7.6-8.7L2 3h6.7l4.6 5.7L17.7 3zm-1.2 16h1.8L7.4 4.9H5.5L16.5 19z"/></svg></a>
+      <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.7 3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.8-4.6 5 .4.3.7.9.7 1.9v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.5 8.8H3.6V21h2.9V8.8zM5 7.4a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4zM21 14.3c0-3.2-1.7-4.7-4-4.7a3.5 3.5 0 0 0-3.1 1.7V8.8H11V21h2.9v-6.5c0-1.2.6-2.4 2-2.4s2.1 1.2 2.1 2.4V21H21v-6.7z"/></svg></a>
+    </div>
+    <p class="copyright">Copyright © <span id="year">2026</span> Samsec Studio, All Rights Reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
